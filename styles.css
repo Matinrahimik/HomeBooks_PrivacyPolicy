@@ -1,0 +1,120 @@
+/* Base reset */
+* { box-sizing: border-box; }
+html:focus-within { scroll-behavior: smooth; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.6;
+  color: #0d1321;
+  background: #f8fafc;
+}
+
+.container {
+  width: 100%;
+  max-width: 860px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  left: 16px;
+  top: 16px;
+  width: auto;
+  height: auto;
+  padding: 8px 12px;
+  background: #0d1321;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.site-header {
+  background: #0d1321;
+  color: #fff;
+  padding: 40px 0 28px;
+  border-bottom: 1px solid rgba(255,255,255,.12);
+}
+.site-title {
+  margin: 0 0 4px;
+  font-size: 28px;
+}
+.site-subtitle {
+  margin: 0 0 6px;
+  font-weight: 600;
+  opacity: .95;
+}
+.effective-date {
+  margin: 0;
+  font-size: 14px;
+  opacity: .8;
+}
+
+.toc {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+.toc ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  list-style: none;
+  margin: 0;
+  padding: 12px 0;
+}
+.toc a {
+  color: #0d1321;
+  text-decoration: none;
+  background: #f1f5f9;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+.toc a:hover, .toc a:focus {
+  background: #e2e8f0;
+}
+
+main {
+  padding: 28px 0 60px;
+}
+main h2 {
+  margin-top: 28px;
+  margin-bottom: 8px;
+  font-size: 22px;
+}
+main h3 {
+  margin-top: 18px;
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+main p {
+  margin: 10px 0;
+}
+ul {
+  padding-left: 20px;
+}
+li { margin: 6px 0; }
+
+a { color: #0a58ca; }
+a:hover, a:focus { color: #073f8a; }
+
+.site-footer {
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  padding: 20px 0 40px;
+  color: #334155;
+}
+.site-footer p { margin: 6px 0; }
+
+@media (min-width: 768px) {
+  .site-title { font-size: 32px; }
+  main h2 { font-size: 24px; }
+}
+
+
